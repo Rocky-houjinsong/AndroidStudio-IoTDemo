@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--xmlns:android系统的命名空间-->
+<!--xmlns:mobile 自己定义的命名空间只需要和你 自定的空间名称相同就可以-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mobile = "http://com.shj.as_base_eoe_icontextview"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.shj.as_base_eoe_icontextview.widget.IconTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text = "第一个图标"
+        mobile:iconSrc = "@drawable/ic_launcher_background"/>
+    <com.shj.as_base_eoe_icontextview.widget.IconTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text = "第二个图标"
+        android:textSize="24dp"
+        mobile:iconSrc = "@drawable/android"/>
+    <com.shj.as_base_eoe_icontextview.widget.IconTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text = "第三个图标"
+        android:textSize="36dp"
+        mobile:iconSrc = "@drawable/android"/>
+    <com.shj.as_base_eoe_icontextview.widget.IconTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text = "第四个图标"
+        android:textSize="48dp"
+        mobile:iconSrc = "@drawable/android"/>
+    <com.shj.as_base_eoe_icontextview.widget.IconTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text = "第五个图标"
+        android:textSize="36dp"
+        mobile:iconSrc = "@drawable/android"/>
+    <com.shj.as_base_eoe_icontextview.widget.IconTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text = "第六个图标"
+        android:textSize="24dp"
+        mobile:iconSrc = "@drawable/android"/>
+    <com.shj.as_base_eoe_icontextview.widget.IconTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text = "第七个图标"
+        mobile:iconSrc = "@drawable/android"/>
+
+</LinearLayout>

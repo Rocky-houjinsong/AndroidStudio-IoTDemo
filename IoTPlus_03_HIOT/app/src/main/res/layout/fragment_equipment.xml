@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f3f5"
+    android:orientation="vertical">
+  <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#202632"
+        android:orientation = "horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的设备"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+        <ImageView
+            android:id="@+id/iv_add_device"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="14dp"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+
+    <!--列表-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/nodata"
+            android:gravity="center"
+            android:text="暂无设备哦，马上去绑定吧" />
+
+        <!--下拉刷新组件-->
+        <!--这里出现一个问题，由于 SwipeRefreshe 下拉刷新依赖包出现版本断层问题，导致 android和 androidx需要迁移这个需要注意-->
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/srl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <!--列表-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+rootProject.name = "AS_BasePanelLayout_Demo01"
+include ':app'

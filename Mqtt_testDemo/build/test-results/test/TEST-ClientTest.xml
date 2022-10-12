@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ClientTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-07T12:14:45" hostname="DESKTOP-C70SDAM" time="1.386">
+  <properties/>
+  <testcase name="connect()" classname="ClientTest" time="1.386"/>
+  <system-out><![CDATA[connect success
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
